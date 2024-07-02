@@ -52,7 +52,7 @@ you include the `Toasts` component in your root component
 </template>
 
 <script setup>
-import { toast, Button } from 'frappe-ui'
+import { toast, Button } from 'eden-ui'
 </script>
 ```
 
@@ -64,7 +64,7 @@ import { toast, Button } from 'frappe-ui'
   <Toasts />
 </template>
 <script setup>
-import { Toasts } from 'frappe-ui'
+import { Toasts } from 'eden-ui'
 </script>
 ```
 
@@ -111,7 +111,7 @@ Toasts can be positioned in six places with respect to the browser window.
 </template>
 
 <script setup>
-import { Tooltip, Button } from 'frappe-ui'
+import { Tooltip, Button } from 'eden-ui'
 
 let makeToast = (props = {}) => toast({
     title: 'Success',

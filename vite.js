@@ -4,7 +4,7 @@ const fs = require('fs')
 module.exports = function proxyOptions({
   port = 8080,
   source = '^/(app|login|api|assets|files)',
- } = {}) {
+} = {}) {
   const config = getCommonSiteConfig()
   const webserver_port = config ? config.webserver_port : 8000
   if (!config) {
@@ -17,10 +17,10 @@ module.exports = function proxyOptions({
     router: function (req) {
       const site_name = req.headers.host.split(':')[0]
       return `http://${site_name}:${webserver_port}`
-    }
+    },
   }
   return {
-    name: 'frappeui-vite-plugin',
+    name: 'edenui-vite-plugin',
     config: () => ({
       server: {
         port: port,
@@ -32,7 +32,7 @@ module.exports = function proxyOptions({
 
 function getCommonSiteConfig() {
   let currentDir = path.resolve('.')
-  // traverse up till we find frappe-bench with sites directory
+  // traverse up till we find eden-cli with sites directory
   while (currentDir !== '/') {
     if (
       fs.existsSync(path.join(currentDir, 'sites')) &&

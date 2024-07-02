@@ -38,7 +38,7 @@ The Badge component is used to show a status badge for an entity.
 </template>
 
 <script setup>
-import { Badge } from 'frappe-ui'
+import { Badge } from 'eden-ui'
 let colorMap = {
   Success: 'green',
   Warning: 'yellow',

@@ -7,9 +7,9 @@ export let Toasts = {
   name: 'Toasts',
   created() {
     if (typeof window === 'undefined') return
-    if (!document.getElementById('frappeui-toast-root')) {
+    if (!document.getElementById('edenui-toast-root')) {
       const root = document.createElement('div')
-      root.id = 'frappeui-toast-root'
+      root.id = 'edenui-toast-root'
       root.style.position = 'fixed'
       root.style.top = '16px'
       root.style.right = '16px'
@@ -21,7 +21,7 @@ export let Toasts = {
     }
   },
   render() {
-    return h(Teleport, { to: '#frappeui-toast-root' }, [
+    return h(Teleport, { to: '#edenui-toast-root' }, [
       getToastsGroup('top-left'),
       getToastsGroup('top-center'),
       getToastsGroup('top-right'),

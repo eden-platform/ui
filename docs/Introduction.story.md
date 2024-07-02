@@ -1,17 +1,17 @@
-# What is Frappe UI?
+# What is Eden UI?
 
-Frappe UI is a set of components and utilities to build frontend apps based on
-the [Frappe Framework](https://frappeframework.com).
+Eden UI is a set of components and utilities to build frontend apps based on the
+[Eden Platform](https://eden.dpcco.me).
 
 Along with generic components which are required to build a frontend like
-Button, Link, Dialog, etc., frappe-ui also contains utilities for handling
+Button, Link, Dialog, etc., eden-ui also contains utilities for handling
 server-side data fetching, directives and utilities.
 
 **Usage example**
 
 ```vue
 <script setup>
-import { Button, LoadingText, createResource } from 'frappe-ui'
+import { Button, LoadingText, createResource } from 'eden-ui'
 
 let todos = createResource({
   type: 'list',
@@ -35,7 +35,7 @@ let todos = createResource({
 
 ## Dependencies
 
-Frappe UI is built on top of the following amazing projects &ndash;
+Eden UI is built on top of the following amazing projects &ndash;
 
 - [Vue 3](https://vuejs.org)
 - [TailwindCSS](https://tailwindcss.com)
@@ -45,38 +45,21 @@ Frappe UI is built on top of the following amazing projects &ndash;
 - [Feather Icons](https://feathericons.com)
 
 See full list of dependencies:
-[package.json](https://github.com/frappe/frappe-ui/blob/main/package.json)
+[package.json](https://github.com/eden-platform/ui/blob/main/package.json)
 
 ## Motivation
 
-In 2019, I started building [Frappe Books](https://frappebooks.com) based on an
-experimental design system by [Timeless](https://timeless.co). As the product
-got built, a set of small reusable components (like Button, Dialog, Card, etc.)
-were also built.
+In building the Eden Platform to create the world's best Application platform,
+we needed a way to build applications that might not be easy to conform to a
+CRUD application model. Highly interactive apps, or consumer facing applications
+do not need the same interactivity that most business applications do. This UI
+framework is designed to provide an easy starting point, connected to exisiting
+business data, to give customers, employees, partners, vendors, or consumers a
+application tailored to the purpose they need.
 
-After the launch of Frappe Books (and me dropping the project) I moved on to
-building the UI for [Frappe Cloud](https://frappecloud.com) in 2020. It also
-needed these components, so I copy-pasted them from Frappe Books to Frappe
-Cloud. These components evolved over time in Frappe Cloud. After working on the
-Frappe Cloud UI for about a year and a half, I moved on to my next project.
-
-At the start of 2022, I started working on
-[Gameplan](https://github.com/frappe/gameplan). I didn't want to copy-paste yet
-again, so I extracted these components in a separate package called
-[`frappe-ui`](https://npm.im/frappe-ui). This package is being developed in
-parallel along with the Gameplan project. I keep adding generic components and
-utilities useful for frontend development.
-
-## Products
-
-Frappe UI is now being used in a lot of products by Frappe.
-
-- [Frappe Cloud](https://frappecloud.com)
-- [Gameplan](https://github.com/frappe/gameplan)
-- [Frappe Desk](https://frappedesk.com)
-- [Frappe Insights](https://github.com/frappe/insights)
-- [Frappe Drive](https://github.com/frappe/drive)
+This will eventually be used as the one UI framework across the entire Eden
+Platform.
 
 ## License
 
-Frappe UI is MIT licensed
+Eden UI is MIT licensed

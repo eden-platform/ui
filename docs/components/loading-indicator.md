@@ -26,6 +26,6 @@ color using the `class` or `style` attribute.
 </template>
 
 <script setup>
-import { LoadingIndicator } from 'frappe-ui'
+import { LoadingIndicator } from 'eden-ui'
 </script>
 ```

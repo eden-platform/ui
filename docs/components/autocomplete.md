@@ -42,7 +42,7 @@ Additionally, it provides a search input to filter the options.
 
 <script>
 import { ref } from 'vue'
-import { Autocomplete } from 'frappe-ui'
+import { Autocomplete } from 'eden-ui'
 let fruit = ref(null)
 </script>
 ```

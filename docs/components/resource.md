@@ -45,7 +45,7 @@ object via slotProps.
 </template>
 
 <script setup>
-import { Resource, Button } from 'frappe-ui'
+import { Resource, Button } from 'eden-ui'
 </script>
 ```
 

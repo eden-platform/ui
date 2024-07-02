@@ -4,5 +4,5 @@ function generateId() {
 }
 
 export function useId() {
-  return 'frappe-ui-' + generateId()
+  return 'eden-ui-' + generateId()
 }

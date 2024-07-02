@@ -32,7 +32,7 @@ features.
 
 <script setup>
 import { ref } from 'vue'
-import { Input } from 'frappe-ui'
+import { Input } from 'eden-ui'
 let fullName = ref('')
 </script>
 ```

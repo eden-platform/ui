@@ -76,7 +76,7 @@ layout.
 
 <script setup>
 import { ref } from 'vue'
-import { Dialog, Button } from 'frappe-ui'
+import { Dialog, Button } from 'eden-ui'
 let showDialog = ref(false)
 </script>
 ```

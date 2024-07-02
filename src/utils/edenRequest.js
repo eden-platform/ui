@@ -1,22 +1,22 @@
 import { request } from './request'
 
-export function frappeRequest(options) {
+export function edenRequest(options) {
   return request({
     ...options,
     transformRequest: (options = {}) => {
       if (!options.url) {
-        throw new Error('[frappeRequest] options.url is required')
+        throw new Error('[edenRequest] options.url is required')
       }
       let headers = Object.assign(
         {
           Accept: 'application/json',
           'Content-Type': 'application/json; charset=utf-8',
-          'X-Frappe-Site-Name': window.location.hostname,
+          'X-Eden-Site-Name': window.location.hostname,
         },
         options.headers || {},
       )
       if (window.csrf_token && window.csrf_token !== '{{ csrf_token }}') {
-        headers['X-Frappe-CSRF-Token'] = window.csrf_token
+        headers['X-Eden-CSRF-Token'] = window.csrf_token
       }
       if (!options.url.startsWith('/') && !options.url.startsWith('http')) {
         options.url = '/api/method/' + options.url

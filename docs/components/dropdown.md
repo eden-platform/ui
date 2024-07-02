@@ -120,7 +120,7 @@ clicked.
 </template>
 
 <script setup>
-import { Dropdown } from 'frappe-ui'
+import { Dropdown } from 'eden-ui'
 </script>
 ```
 

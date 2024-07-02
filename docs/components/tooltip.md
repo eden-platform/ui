@@ -23,7 +23,7 @@ for an easy way to show tooltips on hover over elements.
 </template>
 
 <script setup>
-import { Tooltip, Button } from 'frappe-ui'
+import { Tooltip, Button } from 'eden-ui'
 </script>
 ```
 

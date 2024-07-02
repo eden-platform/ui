@@ -110,10 +110,10 @@ To render grouped rows, you must provide `rows` in the following format:
 ### Selection Banner (Will be shown when selectable (default is true) is true)
 
 **Without custom action buttons:**
-<img width="1213" alt="image" src="https://github.com/frappe/frappe-ui/assets/30859809/36fafcf5-45c6-43f0-acde-f64afe38b550">
+<img width="1213" alt="image" src="https://github.com/eden-platform/ui/assets/30859809/36fafcf5-45c6-43f0-acde-f64afe38b550">
 
 **With custom action buttons:**
-<img width="1212" alt="image" src="https://github.com/frappe/frappe-ui/assets/30859809/55e751b2-df66-4ff0-b852-af463014463f">
+<img width="1212" alt="image" src="https://github.com/eden-platform/ui/assets/30859809/55e751b2-df66-4ff0-b852-af463014463f">
 
 ```
 <ListSelectBanner>
@@ -128,7 +128,7 @@ To render grouped rows, you must provide `rows` in the following format:
 
 You can also make your own custom selection banner
 
-<img width="629" alt="image" src="https://github.com/frappe/frappe-ui/assets/30859809/38dfa834-96a2-4ac5-ad4b-30b3e6871d3f">
+<img width="629" alt="image" src="https://github.com/eden-platform/ui/assets/30859809/38dfa834-96a2-4ac5-ad4b-30b3e6871d3f">
 
 ```
 <ListSelectBanner>

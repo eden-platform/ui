@@ -5,7 +5,7 @@ import { FileUploader, Button, ErrorMessage } from '../../src/index'
 # FileUploader
 
 The FileUploader component is a renderless component used to upload files. It
-only works with a Frappe Framework backend.
+only works with a Eden Platform backend.
 
 ## Usage
 
@@ -19,7 +19,7 @@ document as JSON object.
 <!-- prettier-ignore -->
 ::: info Note
 The following example can't upload the file because it is not connected to a
-Frappe backend.
+Eden backend.
 :::
 
 <Story class="gap-4">
@@ -74,7 +74,7 @@ Frappe backend.
 </template>
 
 <script setup>
-import { FileUploader, Button } from 'frappe-ui'
+import { FileUploader, Button } from 'eden-ui'
 </script>
 ```
 

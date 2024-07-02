@@ -13,7 +13,7 @@ export default {
         const valid = validIcons.includes(value)
         if (!valid) {
           console.groupCollapsed(
-            '[frappe-ui] name property for feather-icon must be one of ',
+            '[eden-ui] name property for feather-icon must be one of ',
           )
           console.dir(validIcons)
           console.groupEnd()

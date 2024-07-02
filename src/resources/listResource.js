@@ -23,13 +23,13 @@ export function createListResource(options, vm) {
     }
   }
 
-  let defaultListUrl = getConfig('defaultListUrl') || 'frappe.client.get_list'
+  let defaultListUrl = getConfig('defaultListUrl') || 'eden.client.get_list'
   let defaultDocInsertUrl =
-    getConfig('defaultDocInsertUrl') || 'frappe.client.insert'
+    getConfig('defaultDocInsertUrl') || 'eden.client.insert'
   let defaultDocUpdateUrl =
-    getConfig('defaultDocUpdateUrl') || 'frappe.client.set_value'
+    getConfig('defaultDocUpdateUrl') || 'eden.client.set_value'
   let defaultDocDeleteUrl =
-    getConfig('defaultDocDeleteUrl') || 'frappe.client.delete'
+    getConfig('defaultDocDeleteUrl') || 'eden.client.delete'
   let defaultRunDocMethodUrl =
     getConfig('defaultRunDocMethodUrl') || 'run_doc_method'
 

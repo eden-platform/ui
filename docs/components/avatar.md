@@ -41,7 +41,7 @@ fallback with their initials.
 </template>
 
 <script setup>
-import { Avatar } from 'frappe-ui'
+import { Avatar } from 'eden-ui'
 </script>
 ```
 

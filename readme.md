@@ -1,52 +1,50 @@
 <p align="center">
-  <a href="https://github.com/frappe/frappe-ui">
-    <img src="./frappe-ui.svg" width="250" />
+  <a href="https://github.com/eden-platform/eden-ui">
+    <img src="./eden-ui.svg" width="250" />
   </a>
 </p>
-<h1 style="font-size: 24px" align="center">Rapidly build modern frontends for Frappe apps</h1>
+<h1 style="font-size: 24px" align="center">Rapidly build modern frontends for Eden Platform apps</h1>
 
 <p align="center">
-  <img alt="MIT License" src="https://img.shields.io/github/license/frappe/frappe-ui"/>
-  <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/frappe-ui.svg?style=flat"/>
+  <img alt="MIT License" src="https://img.shields.io/github/license/eden-platform/ui"/>
+  
 </p>
 
-Frappe UI provides a set of components and utilities for rapid UI development.
+Eden UI provides a set of components and utilities for rapid UI development.
 Components are built using Vue 3 and Tailwind. Along with components, there are
 directives and utilities that make UI development easier.
 
 ## Links
 
-- [Documentation](https://frappeui.com)
-- [Frappe UI Starter Boilerplate](https://github.com/netchampfaris/frappe-ui-starter)
-- [Community](https://github.com/frappe/frappe-ui/discussions)
+- [Documentation](https://eden-platform.dpcco.com)
 
 ## Installation
 
 ```sh
-npm install frappe-ui
+npm install eden-ui
 # or
-yarn add frappe-ui
+yarn add eden-ui
 ```
 
-Now, import the FrappeUI plugin and components in your Vue app's `main.js`:
+Now, import the EdenUI plugin and components in your Vue app's `main.js`:
 
 ```js
 import { createApp } from 'vue'
-import { FrappeUI } from 'frappe-ui'
+import { EdenUI } from 'eden-ui'
 import App from './App.vue'
 import './index.css'
 
 let app = createApp(App)
-app.use(FrappeUI)
+app.use(EdenUI)
 app.mount('#app')
 ```
 
-In your `tailwind.config.js` file, include the frappe-ui preset:
+In your `tailwind.config.js` file, include the eden-ui preset:
 
 ```js
 module.exports = {
   presets: [
-    require('frappe-ui/src/utils/tailwind.config')
+    require('eden-ui/src/utils/tailwind.config')
   ],
   ...
 }
@@ -59,7 +57,7 @@ Now, you can import needed components and start using it:
   <button>Click me</button>
 </template>
 <script>
-  import { Button } from 'frappe-ui'
+  import { Button } from 'eden-ui'
   export default {
     components: {
       Button,
@@ -67,17 +65,6 @@ Now, you can import needed components and start using it:
   }
 </script>
 ```
-
-## Used By
-
-Frappe UI is being used in a lot of products by
-[Frappe](https://github.com/frappe).
-
-- [Frappe Cloud](https://frappecloud.com)
-- [Gameplan](https://github.com/frappe/gameplan)
-- [Helpdesk](https://github.com/frappe/helpdesk)
-- [Frappe Insights](https://github.com/frappe/insights)
-- [Frappe Drive](https://github.com/frappe/drive)
 
 ## License
 

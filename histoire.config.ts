@@ -9,14 +9,14 @@ export default defineConfig({
   setupFile: './histoire.setup.ts',
   plugins: [HstVue()],
   theme: {
-    title: 'Frappe UI',
+    title: 'Eden UI',
     defaultColorScheme: 'light',
     hideColorSchemeSwitch: true,
-    favicon: 'frappe-ui-square.png',
+    favicon: 'eden-ui-square.png',
     logo: {
-      square: './frappe-ui-square.png',
-      light: './frappe-ui.png',
-      dark: './frappe-ui.png',
+      square: './eden-ui-square.png',
+      light: './eden-ui.png',
+      dark: './eden-ui.png',
     },
     colors: {
       gray: fullConfig.theme.colors.gray,

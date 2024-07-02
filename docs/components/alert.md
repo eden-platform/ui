@@ -28,7 +28,7 @@ import { Alert, Button } from '../../src/index'
 </template>
 
 <script setup>
-import { Alert, Button } from 'frappe-ui'
+import { Alert, Button } from 'eden-ui'
 </script>
 ```
 

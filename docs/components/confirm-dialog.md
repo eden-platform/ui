@@ -45,7 +45,7 @@ You need to make sure you include the `Dialogs` component in your root component
 </template>
 
 <script setup>
-import { confirmDialog, Button } from 'frappe-ui'
+import { confirmDialog, Button } from 'eden-ui'
 </script>
 ```
 
@@ -57,6 +57,6 @@ import { confirmDialog, Button } from 'frappe-ui'
   <Dialogs />
 </template>
 <script setup>
-import { Dialogs } from 'frappe-ui'
+import { Dialogs } from 'eden-ui'
 </script>
 ```

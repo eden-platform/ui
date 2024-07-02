@@ -5,7 +5,7 @@ frontend. It will fetch, cache and keep data up-to-date from the server.
 
 ## Basic example
 
-Any data that is fetched via a web request is called a resource in frappe-ui
+Any data that is fetched via a web request is called a resource in eden-ui
 terminology. When you are dealing with async data, you are also dealing with
 loading states, error states, refetching etc. In the traditional way of fetching
 data, you have to handle loading states, error states, and refetching yourself.
@@ -36,7 +36,7 @@ object.
 </template>
 
 <script setup>
-import { createResource } from 'frappe-ui'
+import { createResource } from 'eden-ui'
 let post = createResource({
   url: 'https://jsonplaceholder.typicode.com/posts/1',
   method: 'GET',
@@ -53,7 +53,7 @@ Resources can also be used in options API style. You need to register the
 **main.js**
 
 ```js
-import { resourcesPlugin } from 'frappe-ui'
+import { resourcesPlugin } from 'eden-ui'
 app.use(resourcesPlugin)
 ```
 
@@ -100,7 +100,7 @@ cached one.
 </template>
 
 <script setup>
-import { createResource } from 'frappe-ui'
+import { createResource } from 'eden-ui'
 let post = createResource({
   url: 'https://jsonplaceholder.typicode.com/posts/1',
   cache: 'posts',
@@ -224,9 +224,9 @@ post.setData(data => {
 })
 ```
 
-## Frappe Resource
+## Eden Resource
 
-Fetching data from a Frappe backend is no different from any other REST API
+Fetching data from a Eden backend is no different from any other REST API
 service.
 
 ```vue
@@ -236,13 +236,13 @@ service.
 </template>
 
 <script setup>
-import { createResource } from 'frappe-ui'
+import { createResource } from 'eden-ui'
 let todos = createResource({
-  url: '/api/method/frappe.client.get_list',
+  url: '/api/method/eden.client.get_list',
   params: {
     doctype: 'ToDo',
     filters: {
-      allocated_to: 'faris@frappe.io',
+      allocated_to: 'justin.d@dpcco.me',
     },
   },
 })
@@ -250,25 +250,25 @@ todos.fetch()
 </script>
 ```
 
-But the response format by Frappe Framework requires some parsing to be done to
-extract data and errors. Since `frappe-ui` is built primarily for Frappe backend
-apps, we can make it understand Frappe responses.
+But the response format by Eden Platform requires some parsing to be done to
+extract data and errors. Since `eden-ui` is built primarily for Eden backend
+apps, we can make it understand Eden responses.
 
-By default, resources use the `request` function exported from `frappe-ui` which
-is a generic Fetch API wrapper. There is another function `frappeRequest` which
-is a wrapper for Frappe REST API calls. To make resources use it, you have to do
-the following:
+By default, resources use the `request` function exported from `eden-ui` which
+is a generic Fetch API wrapper. There is another function `edenRequest` which is
+a wrapper for Eden REST API calls. To make resources use it, you have to do the
+following:
 
 **main.js**
 
 ```js
-import { setConfig, frappeRequest } from 'frappe-ui'
-setConfig('resourceFetcher', frappeRequest)
+import { setConfig, edenRequest } from 'eden-ui'
+setConfig('resourceFetcher', edenRequest)
 ```
 
-Now, resources will use `frappeRequest` for making the web requests. You can
-also drop the `/api/method` part. The returned response will now set the data
-from `message` key and error from `exc`.
+Now, resources will use `edenRequest` for making the web requests. You can also
+drop the `/api/method` part. The returned response will now set the data from
+`message` key and error from `exc`.
 
 ```vue
 <template>
@@ -277,14 +277,14 @@ from `message` key and error from `exc`.
 </template>
 
 <script setup>
-import { createResource } from 'frappe-ui'
+import { createResource } from 'eden-ui'
 let todos = createResource({
-- url: '/api/method/frappe.client.get_list',
-+ url: 'frappe.client.get_list',
+- url: '/api/method/eden.client.get_list',
++ url: 'eden.client.get_list',
   params: {
     doctype: 'ToDo',
     filters: {
-      allocated_to: 'faris@frappe.io',
+      allocated_to: 'faris@eden.io',
     },
   },
 })

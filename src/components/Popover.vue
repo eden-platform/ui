@@ -14,7 +14,7 @@
         v-bind="{ togglePopover, updatePosition, open, close, isOpen }"
       />
     </div>
-    <teleport to="#frappeui-popper-root">
+    <teleport to="#edenui-popper-root">
       <div
         ref="popover"
         class="relative z-[100]"
@@ -104,9 +104,9 @@ export default {
   },
   created() {
     if (typeof window === 'undefined') return
-    if (!document.getElementById('frappeui-popper-root')) {
+    if (!document.getElementById('edenui-popper-root')) {
       const root = document.createElement('div')
-      root.id = 'frappeui-popper-root'
+      root.id = 'edenui-popper-root'
       document.body.appendChild(root)
     }
   },
@@ -124,7 +124,7 @@ export default {
         return
       }
 
-      const root = document.getElementById('frappeui-popper-root')
+      const root = document.getElementById('edenui-popper-root')
       const insidePopoverRoot = root.contains(clickedElement)
       if (!insidePopoverRoot) {
         return this.close()

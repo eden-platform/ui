@@ -23,11 +23,11 @@ export function createDocumentResource(options, vm) {
     return cachedResource
   }
 
-  let defaultDocGetUrl = getConfig('defaultDocGetUrl') || 'frappe.client.get'
+  let defaultDocGetUrl = getConfig('defaultDocGetUrl') || 'eden.client.get'
   let defaultDocUpdateUrl =
-    getConfig('defaultDocUpdateUrl') || 'frappe.client.set_value'
+    getConfig('defaultDocUpdateUrl') || 'eden.client.set_value'
   let defaultDocDeleteUrl =
-    getConfig('defaultDocDeleteUrl') || 'frappe.client.delete'
+    getConfig('defaultDocDeleteUrl') || 'eden.client.delete'
   let defaultRunDocMethodUrl =
     getConfig('defaultRunDocMethodUrl') || 'run_doc_method'
 

@@ -1,11 +1,11 @@
 # List Resource
 
 List Resource is a wrapper on top of [Resource](./Resource.story.md) for working
-with lists. This feature only works with a Frappe Framework backend as of now.
+with lists. This feature only works with a Eden Platform backend as of now.
 
 ## Usage
 
-A list resource knows how to fetch records of a DocType from a Frappe Framework
+A list resource knows how to fetch records of a DocType from a Eden Platform
 backend so there is no need to specify the url. Instead you only define
 `doctype`, `fields`, `filters`, etc. You also get methods like `next()`,
 `setValue()`, etc.
@@ -27,7 +27,7 @@ backend so there is no need to specify the url. Instead you only define
   <Button @click="todos.next()"> Next Page </Button>
 </template>
 <script setup>
-import { createListResource } from 'frappe-ui'
+import { createListResource } from 'eden-ui'
 let todos = createListResource({
   doctype: 'ToDo',
   fields: ['name', 'description', 'status'],
@@ -47,7 +47,7 @@ the `resourcesPlugin` first.
 **main.js**
 
 ```js
-import { resourcesPlugin } from 'frappe-ui'
+import { resourcesPlugin } from 'eden-ui'
 app.use(resourcesPlugin)
 ```
 
@@ -117,9 +117,9 @@ let todos = createListResource({
     // can be a string
     cache: 'todos',
     // or an array that can be serialized
-    cache: ['todos', 'faris@frappe.io'],
+    cache: ['todos', 'justin.d@dpcco.me'],
 
-    // default value for url is "frappe.client.get_list"
+    // default value for url is "eden.client.get_list"
     // specify url if you want to use a custom API method
     url: 'todo_app.api.get_todos',
 

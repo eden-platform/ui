@@ -68,7 +68,7 @@ the popover.
 </template>
 
 <script setup>
-import { Popover } from 'frappe-ui'
+import { Popover } from 'eden-ui'
 </script>
 ```
 

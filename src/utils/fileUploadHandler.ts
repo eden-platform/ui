@@ -95,7 +95,7 @@ class FileUploadHandler {
       xhr.setRequestHeader('Accept', 'application/json')
 
       if (window.csrf_token && window.csrf_token !== '{{ csrf_token }}') {
-        xhr.setRequestHeader('X-Frappe-CSRF-Token', window.csrf_token)
+        xhr.setRequestHeader('X-Eden-CSRF-Token', window.csrf_token)
       }
 
       let form_data = new FormData()

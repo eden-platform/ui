@@ -34,7 +34,7 @@ opening a Dialog, or canceling an action.
 </template>
 
 <script setup>
-import { Button } from 'frappe-ui'
+import { Button } from 'eden-ui'
 </script>
 ```
 

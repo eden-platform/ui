@@ -38,7 +38,7 @@ the `v-if` directive.
 </template>
 
 <script setup>
-import { ErrorMessage } from 'frappe-ui'
+import { ErrorMessage } from 'eden-ui'
 
 let error = null
 try {

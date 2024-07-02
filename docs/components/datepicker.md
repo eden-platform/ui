@@ -35,7 +35,7 @@ The DatePicker component is a prettier alternative to `<input type="date">`
 
 <script setup>
 import { ref } from 'vue'
-import { DatePicker } from 'frappe-ui'
+import { DatePicker } from 'eden-ui'
 let date = ref(null)
 </script>
 ```

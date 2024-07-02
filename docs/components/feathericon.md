@@ -30,7 +30,7 @@ property. You can customize the `stroke-width` by passing it as a prop.
   <FeatherIcon name="coffee" stroke-width="1" class="h-6 w-6 text-green-600" />
 </template>
 <script setup>
-import { FeatherIcon } from 'frappe-ui'
+import { FeatherIcon } from 'eden-ui'
 </script>
 ```
 

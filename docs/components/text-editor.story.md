@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { TextEditor, TextEditorFixedMenu, TextEditorBubbleMenu, TextEditorContent, Button, Input } from '../../src/index'
-let content1 = ref(`<p><strong>Hello, we are Frappe 👋</strong></p><p>We are a remote technology company committed to building world-class <mark data-color="#fef9c3" style="background-color: #fef9c3; color: inherit">open-source</mark> software products and services. This is our story.</p><p><strong>Framework and Apps</strong></p><p>Our flagship products are our web framework <a target="_blank" rel="noopener noreferrer nofollow" href="https://frappeframework.com/">Frappe</a> which is a fully featured, low code framework, and the world's best free and open source ERP <a target="_blank" rel="noopener noreferrer nofollow" href="https://erpnext.com/">ERPNext</a>. ERPNext helps companies from tiny startups to large enterprises and public bodies manage their operations from financial accounting, inventory management to payroll. Along with ERPNext we have built <a target="_blank" rel="noopener noreferrer nofollow" href="https://frappe.io/frappeverse">several other products</a> on top of our framework and we continue to build more.</p><p>In case you are wondering, FRAPPE = FRamework + APPs :-)</p><p><strong>Products</strong></p><ul><li><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://frappecloud.com/"><strong>Frappe Cloud</strong></a></p></li><li><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/frappe/gameplan"><strong>Gameplan</strong></a></p></li><li><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://frappedesk.com/"><strong>Frappe Desk</strong></a></p></li><li><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/frappe/insights"><strong>Frappe Insights</strong></a></p></li><li><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/frappe/drive"><strong>Frappe Drive</strong></a></p></li></ul>`)
+let content1 = ref(`<p><strong>Hello, we are Don't Panic Consulting 👋</strong></p><p>We are a remote technology company committed to building world-class <mark data-color="#fef9c3" style="background-color: #fef9c3; color: inherit">open-source</mark> software products and services. This is our story.</p><p><strong>Framework and Apps</strong></p><p>Our flagship products are our web framework <a target="_blank" rel="noopener noreferrer nofollow" href="https://eden.dpcco.me/">Eden</a> which is a fully featured, low code framework, and the world's best free and open source ERP <a target="_blank" rel="noopener noreferrer nofollow" href="https://eden.dpcco.me">Eden</a>. Eden helps companies from tiny startups to large enterprises and public bodies manage their operations from financial accounting, inventory management to payroll. Along with Eden we have built <a target="_blank" rel="noopener noreferrer nofollow" href="https://dpcco.me/apps">several other products</a> on top of our framework and we continue to build more.</p><p>In case you are wondering, FRAPPE = FRamework + APPs :-)</p><p><strong>Products</strong></p><ul><li><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://edencloud.us/"><strong>Eden Cloud</strong></a></p></li><li><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://dpcco.me/apps/hub"><strong>Hub</strong></a></p></li><li><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://dpcco.me/apps/desk"><strong>Eden Desk</strong></a></p></li><li><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://dpcco.me/apps/insights"><strong>Eden Insights</strong></a></p></li><li><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://dpcco.me/apps/drive"><strong>Eden Drive</strong></a></p></li></ul>`)
 let content2 = ref('Highly customized editor')
 let contentBubble = ref('Highlight some text here')
 let editable = ref(true)
@@ -105,7 +105,7 @@ Here is a basic version with fixed menu at the top.
 </template>
 
 <script setup>
-import { TextEditor } from 'frappe-ui'
+import { TextEditor } from 'eden-ui'
 let mentions = [
   { label: 'Husain Wrenn', value: 'hwrenn0@spotify.com' },
   { label: 'Gwenore Fitter', value: 'gfitter1@foxnews.com' },
@@ -121,12 +121,15 @@ let mentions = [
 </script>
 ```
 
-If you are on Vue version 3.2 or earlier, you need to add this line in your main.js file:
+If you are on Vue version 3.2 or earlier, you need to add this line in your
+main.js file:
+
 ```js
 app.config.unwrapInjectedRef = true
 ```
-You can read more about it here: https://vuejs.org/guide/components/provide-inject.html#working-with-reactivity
 
+You can read more about it here:
+https://vuejs.org/guide/components/provide-inject.html#working-with-reactivity
 
 ## Props
 
@@ -158,7 +161,7 @@ Here are some examples of customized editors:
 
 You can customize which buttons show up in the menu by passing an array of
 button names. You can find the list of all buttons available
-[here](https://github.com/frappe/frappe-ui/blob/main/src/components/TextEditor/commands.js).
+[here](https://github.com/eden-platform/ui/blob/main/src/components/TextEditor/commands.js).
 
 <Story class="h-80" :iframe="false">
   <TextEditor
@@ -179,7 +182,7 @@ button names. You can find the list of all buttons available
   />
 </template>
 <script setup>
-import { TextEditor } from 'frappe-ui'
+import { TextEditor } from 'eden-ui'
 let content = ref('[initial html content]')
 let fixedMenuMinimalButtons = [
   'Paragraph',
@@ -222,7 +225,7 @@ can also pass a list of button names, just like the previous example.
   />
 </template>
 <script setup>
-import { TextEditor } from 'frappe-ui'
+import { TextEditor } from 'eden-ui'
 let content = ref('[initial html content]')
 </script>
 ```
@@ -249,7 +252,7 @@ You can combine multiple menus. You can also pass an array of button names.
   />
 </template>
 <script setup>
-import { TextEditor } from 'frappe-ui'
+import { TextEditor } from 'eden-ui'
 </script>
 ```
 
@@ -345,7 +348,7 @@ import {
   TextEditorContent,
   Button,
   Input,
-} from 'frappe-ui'
+} from 'eden-ui'
 let content = ref('Highly customized editor')
 let editable = ref(true)
 let fixedMenuMinimalButtons = [

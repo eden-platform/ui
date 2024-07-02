@@ -82,11 +82,11 @@ export {
   resourcesPlugin,
 } from './resources/index.js'
 export { request } from './utils/request.js'
-export { frappeRequest } from './utils/frappeRequest.js'
+export { edenRequest } from './utils/edenRequest.js'
 export { default as initSocket } from './utils/socketio.js'
 export { setConfig, getConfig } from './utils/config.js'
 
 // plugin
 export { default as pageMetaPlugin } from './utils/pageMeta.js'
-export { default as FrappeUI } from './utils/plugin.js'
+export { default as EdenUI } from './utils/plugin.js'
 export { confirmDialog } from './utils/confirmDialog.js'

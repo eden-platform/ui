@@ -7,13 +7,13 @@ export default async function call(method, args, options = {}) {
     {
       Accept: 'application/json',
       'Content-Type': 'application/json; charset=utf-8',
-      'X-Frappe-Site-Name': window.location.hostname,
+      'X-Eden-Site-Name': window.location.hostname,
     },
     options.headers || {},
   )
 
   if (window.csrf_token && window.csrf_token !== '{{ csrf_token }}') {
-    headers['X-Frappe-CSRF-Token'] = window.csrf_token
+    headers['X-Eden-CSRF-Token'] = window.csrf_token
   }
 
   let path = method.startsWith('/') ? method : `/api/method/${method}`
